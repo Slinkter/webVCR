@@ -6,6 +6,4 @@ $servername = "11.78.0.27";
 $conn=mysqli_connect();
 mysqli_set_charset($conn,"utf-8");
 
-
-
 ?>
