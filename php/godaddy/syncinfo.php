@@ -1,31 +1,22 @@
 <?php
+require "connect.php";
+$Name = $_GET["name"];  
+$query = "INSERT INTO contacts (`name`) VALUES ('$Name');";
 
-$user_name = "userArsi";
-$password = "MUNDOarsi20";
-$server = "localhost";
-$db_name = "dbContactsArsi";
-
-$con = mysqli_connect($server,$user_name,$password,$db_name);
-
-if($con){  
-    $Name = $_POST['name'];    
-    $query = "INSERT INTO `contacts` (`id`, `name`) VALUES ('.NULL.','".$Name."')";
-    $result = mysqli_query($con,$query);
-    $response = array();
-    if($result){
-        $status = 'OK';
-
+if($conn){
+    if(mysqli_query($conn,$query)){
+        $response['success'] = true;
+        $response['message']= "Successfuly";
     }else {
-        $status = 'FAILED';
+        $response['success'] = false;
+        $response['message']= "Failure!";
     }
-}else{  
-    $status ='FAILED';
-}
 
-if(mysqli_connect_errno()){
-    echo "Failed to connect ".mysqli_connect_errno();
+}else{
+    $response['success'] = false;
+    $response['message']= "error";
 }
+echo json_encode($response);
+mysql_close($con);
 
-echo json_encode(array("response" => $status));
-mysql_close($con)
 ?>
