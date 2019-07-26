@@ -13,7 +13,8 @@ if(mysqli_query($conn,$query)){
     $correo = 'brevete';
     $numphone = 'numphone'; 
     
-  
+    $json = array();
+
     $query_run = mysqli_query($conn,$query);
     while($row = mysqli_fetch_array($query_run)){
 
@@ -22,12 +23,15 @@ if(mysqli_query($conn,$query)){
         $response[$dni] = $row[3];
         $response[$correo]= $row[4];
         $response[$numphone]= $row[5];
-        $List[]=$response;
-         
+
+        //$List[]=$response;
+        $json['ListaChofer'][] = $row; 
     }  
      
-    $response['success'] = true;
-    $response['message']= "Successfuly";
+    $json['success'] = true;
+    $json['message']= "Successfuly";
+  
+
 }else {
     $response['success'] = false;
     $response['message']= "Failure!";
@@ -35,7 +39,8 @@ if(mysqli_query($conn,$query)){
 
 
 //echo json_encode($response);
-echo json_encode($List);
+//echo json_encode($List);
+echo json_encode($json);
 mysql_close($conn);
 ?>
  
