@@ -24,7 +24,7 @@ if(mysqli_query($conn,$query)){
         $response[$correo]= $row[4];
         $response[$numphone]= $row[5];
 
-        //$List[]=$response;
+        $List[]=$response;
         $json['ListaChofer'][] = $row; 
     }  
      
@@ -39,8 +39,8 @@ if(mysqli_query($conn,$query)){
 
 
 //echo json_encode($response);
-//echo json_encode($List);
-echo json_encode($json);
+echo json_encode($List);
+//echo json_encode($json);
 mysql_close($conn);
 ?>
  
