@@ -1,9 +1,6 @@
 <?php
-
 require "connect.php";
-
 $query = "SELECT * FROM choferRiver ; ";
-
 if(mysqli_query($conn,$query)){
 
     $id = 'id';
@@ -22,11 +19,8 @@ if(mysqli_query($conn,$query)){
         $response[$correo]= $row[4];
         $response[$numphone]= $row[5];
         $List[]=$response;
-        
     }  
-     
-    $json['success'] = true;
-    $json['message']= "Successfuly";
+    
 }else {
     $response['success'] = false;
     $response['message']= "Failure!";
