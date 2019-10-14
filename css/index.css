@@ -1,23 +1,28 @@
-.title-logo{
+.title-logo {
     font-family: 'Playfair Display', serif;
 }
-.title-Address{
+
+.title-Address {
     font-family: 'Arapey', serif;
     font-size: 30px;
 }
 
-.bg-while-line{
+.bg-while-line {
     background: #ffffff;
-    border-top: 2px solid #c8ced4!important;
-}
-.text-while{
-    color: #c8ced4!important;  
+    border-top: 2px solid #c8ced4 !important;
 }
 
-.servicio-background{
-   
+.text-while {
+    color: #c8ced4 !important;
+}
+
+.servicio-background {
+
     background-color: #e9ecef;
-  
-    
 }
 
+.block-one {
+    background: linear-gradient(90deg, rgba(32, 30, 30, 0.925), rgba(0, 0, 0, 0.925)), url('../imagenes/main.jpg') center center;
+    background-size: cover;
+    min-height: 105vh;
+}
