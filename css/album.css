@@ -24,10 +24,18 @@
 }
 
 footer {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
 }
 
 footer p {
   margin-bottom: .25rem;
+}
+
+
+.year-footer {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 0;
+  background-color: #fff;
 }
