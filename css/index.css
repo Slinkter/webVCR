@@ -25,4 +25,41 @@
     background: linear-gradient(90deg, rgba(32, 30, 30, 0.925), rgba(0, 0, 0, 0.925)), url('../imagenes/main.jpg') center center;
     background-size: cover;
     min-height: 105vh;
+    
 }
+
+
+
+
+@media (min-width: 400px) {
+    .title-logo1 {
+        font-size: 3.0rem;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+  }
+
+
+  @media (min-width: 768px) {
+    .title-logo1 {
+        font-size: 4.5rem;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .title-logo1 {
+        font-size: 4.5rem;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .title-logo1 {
+        font-size: 4.5rem;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+  }
