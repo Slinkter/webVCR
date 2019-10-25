@@ -6,8 +6,6 @@ $form_email = $_POST["form_email"];
 $form_tel = $_POST["form_tel"];
 $form_msj = $_POST["form_msj"];
 
-
-
 $para      = 'juancarlos@vidrieriachaloreyes.com';
 $titulo    = 'Correo de Pagina Web';
 $mensaje   = 'Nombre : '.$form_name  ."\n".
