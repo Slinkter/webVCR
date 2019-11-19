@@ -12,7 +12,7 @@
 
     <!-- ============================================================================================================= -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/font-awesome.css">
+
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/footer_index.css">
@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arapey">
 
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 
 </head>
 
@@ -93,33 +93,37 @@
                         <div class="card border-0">
 
                             <div class="card-block pt-4 px-5 pb-1">
-                                <form action="enviar.php" method="POST">
+                                <form class="recaptchaForm" action="enviar.php" method="POST">
                                     <div class="form-group">
                                         <label for="exampleFormControlInput1">Nombre o Empresa</label>
-                                        <input type="text" name="form_name" class="form-control"
-                                            id="exampleFormControlInput1" placeholder="escriba su nombre" required>
+                                        <input type="text" name="form_name" class="form-control" id="name"
+                                            placeholder="escriba su nombre" required>
                                     </div>
                                     <div class="form-group">
                                         <label for="exampleFormControlInput1">Correo electronico</label>
-                                        <input type="email" name="form_email" class="form-control"
-                                            id="exampleFormControlInput1" placeholder="nombre@correo.com" required>
+                                        <input type="email" name="form_email" class="form-control" id="email"
+                                            placeholder="nombre@correo.com" required>
                                     </div>
                                     <div class="form-group">
                                         <label for="exampleFormControlInput1">Telefono</label>
-                                        <input type="tel" name="form_tel" class="form-control"
-                                            id="exampleFormControlInput1" placeholder="999999999" required>
+                                        <input type="tel" name="form_tel" class="form-control" id="phone"
+                                            placeholder="999999999" required>
                                     </div>
 
                                     <div class="form-group">
                                         <label for="exampleFormControlTextarea1">Escriba su consulta </label>
-                                        <textarea class="form-control" name="form_msj" id="exampleFormControlTextarea1"
+                                        <textarea class="form-control" name="form_msj" id="consulta"
                                             rows="3"></textarea>
                                     </div>
-                                    <div class="form-group g-recaptcha"
-                                        data-sitekey="6LcJZMMUAAAAACzJkFCIsDuqXBRGT9G4ahd9PHPz" required></div>
 
-                                    <button class="btn btn-lg btn-warning mb-4 w-100 rounded-0" value="Enviar"
-                                        id="boton_enviar" type="submit">Enviar</button>
+                                    <div class="form-group">
+                                        <div class="g-recaptcha"
+                                            data-sitekey="6LcJZMMUAAAAACzJkFCIsDuqXBRGT9G4ahd9PHPz"></div>
+                                    </div>
+
+                                    <input id="boton_enviar" class="btn btn-lg btn-warning mb-4 w-100 rounded-0"
+                                        type="submit" value="Submit">
+
                                 </form>
                             </div>
                         </div>
@@ -170,9 +174,62 @@
 
     </footer>
     <!-- ============================================================================================================= -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"> </script>
+    <script src="https://www.google.com/recaptcha/api.js"> </script>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"> </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"> </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"> </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".recaptchaForm").submit(function (event) {
+                var recaptcha = $("#g-recaptcha-response").val();
+
+                var name = document.getElementById("name").value;
+                var email = document.getElementById("email").value;
+                var phone = document.getElementById("phone").value;
+                var consulta = document.getElementById("consulta").value;
+
+                if (recaptcha === "") {
+                    event.preventDefault();
+                    alert('Falta validar el check');
+                }
+                event.preventDefault();
+                $.post("enviar.php", {
+                    "secret": "6LcJZMMUAAAAAAtQxOGi2etmvt5dq11q1Xhm4Suw",
+                    "response": recaptcha,
+                    "form_name": name,
+                    "form_email": email,
+                    "form_tel": phone,
+                    "form_msj": consulta
+                }, function (response) {
+                    console.log(response);
+
+                    var jsonObject = $.parseJSON(response);
+                    
+                    var verdadero = jsonObject["success"];
+                    var challenge_ts = jsonObject["challenge_ts"];
+                    var hostname = jsonObject["hostname"];
+
+                    console.log(verdadero);
+                    console.log(challenge_ts);
+                    console.log(hostname);
+                    
+                    if (verdadero == true) {
+                        location.href = "https://vidrieriachaloreyes.com/gracias.html";
+                    } else {
+                        console.log(" nnnnooo");
+
+                    }
+
+
+                });
+
+            });
+        });
+    </script>
+
 
 </body>
 
