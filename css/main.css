@@ -1,48 +1,58 @@
-body{
-font-family: 'Lato', sans-serif;
-}
-img {
-    width:240px;
-	height:240px;
+body {
+	font-family: 'Lato', sans-serif;
 }
 
-.quitar-float{
+img {
+	width: 240px;
+	height: 240px;
+}
+
+.quitar-float {
 	float: none;
 }
-.espacio-arriba{
-margin-top: 100px;
+
+.espacio-arriba {
+	margin-top: 100px;
 }
-.espacio-arriba-muro-cortina{
-margin-top: 50px;
+
+.espacio-arriba-muro-cortina {
+	margin-top: 50px;
 }
-.pacifico{
-	font-family: 'pacifico',cursive;
+
+.pacifico {
+	font-family: 'pacifico', cursive;
 }
-.grande{
+
+.grande {
 	font-size: 4em;
 }
-.verde{
-	color:#42141d; 
+
+.verde {
+	color: #42141d;
 }
-.rojo{
-    color:#ff0000;
+
+.rojo {
+	color: #ff0000;
 }
-.azul{
-    color:#0033ff;
+
+.azul {
+	color: #0033ff;
 }
 
 
-.espacio-derecha{
+.espacio-derecha {
 	margin-right: 1em;
 }
-.a{
-	color:#542857;
+
+.a {
+	color: #542857;
 }
 
 .noa {
 	margin: 0px;
 	padding: 0px;
 }
+
 .noa {
 	list-style-type: none;
 
@@ -50,83 +60,86 @@ margin-top: 50px;
 
 .se-gris {
 
-	background-color:#eee
-
+	background-color: #eee
 }
 
-.padding-largo{
+.padding-largo {
 
 	padding: 5px 10px;
 
 }
 
-.inline-block{
+.inline-block {
 
 	float: none;
 	display: inline-block;
 	margin-right: -4px;
 }
-a,.azul{
+
+a,
+.azul {
 
 	color: #0089ff;
 }
 
-.vete-arriba{
+.vete-arriba {
 	vertical-align: top;
 }
 
-.mediano{
+.mediano {
 
 	font-size: 1.5em;
 }
-.retraso-1{
 
-	-webkit-animation-delay : 1s;
-	-moz-animation-delay : 1s;
-	animation-delay : 1s;
-
-
+.retraso-1 {
+	-webkit-animation-delay: 0.6s;
+	-moz-animation-delay: 0.6s;
+	animation-delay: 0.6s;
 }
-.retraso-2{
 
-	-webkit-animation-delay : 2s;
-	-moz-animation-delay : 2s;
-	animation-delay : 2s;
-
-
+.retraso-2 {
+	-webkit-animation-delay: 1.4s;
+	-moz-animation-delay: 1.4s;
+	animation-delay: 1.4s;
 }
-.colorRed{
+
+.colorRed {
 	background: #B9121B;
 	color: #FCFFF5;
 
 }
 
-.colorRedServicioBar{
-		color: #E50000;
+.colorRedServicioBar {
+	color: #E50000;
 
 }
 
-.fondoS1{
-  background: #304269;
-	color:#FFFFFF;
+.fondoS1 {
+	background: #304269;
+	color: #FFFFFF;
 }
-.colorBlue{
+
+.colorBlue {
 	background: #F4F5F6;
-	color:#262F36;
+	color: #262F36;
 }
-.colorBlueDark{
+
+.colorBlueDark {
 	background: #262F36;
-	color:#FCFFF5;
+	color: #FCFFF5;
 }
-.colorServicioBackground{
-  background : #fff;
+
+.colorServicioBackground {
+	background: #fff;
 
 }
-.colorFooter{
-   background : #5C654C;
-   color: #fff;
+
+.colorFooter {
+	background: #5C654C;
+	color: #fff;
 }
-.imagen_logo{
-	width:180px;
-	 height:180px;
+
+.imagen_logo {
+	width: 180px;
+	height: 180px;
 }
