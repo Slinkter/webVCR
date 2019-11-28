@@ -207,7 +207,7 @@
                     console.log(response);
 
                     var jsonObject = $.parseJSON(response);
-                    
+
                     var verdadero = jsonObject["success"];
                     var challenge_ts = jsonObject["challenge_ts"];
                     var hostname = jsonObject["hostname"];
@@ -215,7 +215,7 @@
                     console.log(verdadero);
                     console.log(challenge_ts);
                     console.log(hostname);
-                    
+
                     if (verdadero == true) {
                         location.href = "https://vidrieriachaloreyes.com/gracias.html";
                     } else {
