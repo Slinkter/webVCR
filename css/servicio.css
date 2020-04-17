@@ -1,0 +1,19 @@
+.cardview{
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgb(71, 71, 71);
+margin: 30px;
+    display: inline;
+    flex-direction: column;
+    justify-content: space-around;
+    background: white;
+    align-items: center;
+    min-width: 10%;
+}
+
+.grow:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    animation-delay: 1.6s;
+
+}
