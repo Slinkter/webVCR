@@ -1,4 +1,4 @@
-.cardview {
+.cardview {    
     background: #FFF;
     flex-direction: column;
     justify-content: space-around;
@@ -9,18 +9,38 @@
     box-shadow: 0 1px 3px rgb(252, 252, 252), 0 3px 12px rgba(0, 0, 0, 0.22);
 
 }
+.up-margin{
 
+    margin-bottom: 30px;
+}
 .grow:hover {
-    transform: scale(1.1);
+
+    transform: scale(1.09);
     animation-delay: 0.9s;
     box-shadow: 0px 1px 35px 0px rgba(0, 0, 0, 0.3);
 }
 
+
+.circle {
+    display: block;
+    padding: 10px;
+    margin: 1em auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-border-radius: 99em;
+    -moz-border-radius: 99em;
+    border-radius: 99em;
+  
+    -webkit-box-shadow: 2px 0px 14px 5px rgba(0,0,0,0.28); 
+    box-shadow: 2px 0px 14px 5px rgba(0,0,0,0.28);
+  }
+
+
+
 @media (min-width: 350px) {
 
- 
-    .img-catalogo{       
-
+    .img-catalogo {
         padding: 15px;
         margin: 25px;
         border-radius: 50%;
@@ -31,18 +51,17 @@
 
 @media (min-width: 400px) {
 
- 
-    .img-catalogo{
-     
+    .img-catalogo {
+
         padding: 15px;
         margin: auto;
         border-radius: 50%;
-        
+
     }
 
-   /*
+    /*
     .cardview {
-        
+
         align-items: center;
         max-width: 70%;
         display: inline;
@@ -53,11 +72,11 @@
 
 
 
-    border-radius: 25px;
-    border : solid #FFF 1px;
-    box-shadow: 0 1px 3px rgb(252, 252, 252), 0 3px 12px rgba(0,0,0,0.22);
-    margin-left: 20px;
-    margin-right: 20px;
+        border-radius: 25px;
+        border: solid #FFF 1px;
+        box-shadow: 0 1px 3px rgb(252, 252, 252), 0 3px 12px rgba(0, 0, 0, 0.22);
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     .grow:hover {
@@ -65,11 +84,15 @@
         -ms-transform: scale(1.1);
         transform: scale(1.1);
         animation-delay: 1.6s;
-  
-        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 
     }
+
+
 */
+
+
 }
 
 
