@@ -1,19 +1,80 @@
-.cardview{
-    border-radius: 15px;
-    box-shadow: 0 5px 20px rgb(71, 71, 71);
-margin: 30px;
-    display: inline;
+.cardview {
+    background: #FFF;
     flex-direction: column;
     justify-content: space-around;
-    background: white;
     align-items: center;
-    min-width: 10%;
+    transition: all 0.3s linear 0s;
+    border-radius: 25px;
+    border: solid #FFF 1px;
+    box-shadow: 0 1px 3px rgb(252, 252, 252), 0 3px 12px rgba(0, 0, 0, 0.22);
+
 }
 
 .grow:hover {
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
-    animation-delay: 1.6s;
+    transform: scale(1.1);
+    animation-delay: 0.9s;
+    box-shadow: 0px 1px 35px 0px rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 350px) {
+
+ 
+    .img-catalogo{       
+
+        padding: 15px;
+        margin: 25px;
+        border-radius: 50%;
+    }
 
 }
+
+
+@media (min-width: 400px) {
+
+ 
+    .img-catalogo{
+     
+        padding: 15px;
+        margin: auto;
+        border-radius: 50%;
+        
+    }
+
+   /*
+    .cardview {
+        
+        align-items: center;
+        max-width: 70%;
+        display: inline;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        transition: all 0.3s linear 0s;
+
+
+
+    border-radius: 25px;
+    border : solid #FFF 1px;
+    box-shadow: 0 1px 3px rgb(252, 252, 252), 0 3px 12px rgba(0,0,0,0.22);
+    margin-left: 20px;
+    margin-right: 20px;
+    }
+
+    .grow:hover {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+        animation-delay: 1.6s;
+  
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+    }
+*/
+}
+
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}
