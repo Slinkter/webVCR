@@ -31,13 +31,7 @@ img {
 	color: #42141d;
 }
 
-.rojo {
-	color: #ff0000;
-}
 
-.azul {
-	color: #0033ff;
-}
 
 
 .espacio-derecha {
@@ -76,11 +70,7 @@ img {
 	margin-right: -4px;
 }
 
-a,
-.azul {
 
-	color: #0089ff;
-}
 
 .vete-arriba {
 	vertical-align: top;
