@@ -102,3 +102,73 @@ html {
         line-height: 1.2;
     }
 }
+
+
+.bloque-sector01{
+    background: linear-gradient(90deg, rgba(32, 30, 30, 0.76), rgba(0, 0, 0, 0.76)), url('../imagenes/glass01.jpg') center center;
+    background-size: cover;
+    min-height: 90vh;
+    transition: all 0.3s linear 0s;
+}
+
+.bloque-sector02{
+    background: linear-gradient(90deg, rgba(32, 30, 30, 0.76), rgba(0, 0, 0, 0.76)),  url('../imagenes/sectoroffices.jpg') center center;
+    background-size: cover;
+    min-height: 90vh;
+    transition: all 0.3s linear 0s;
+}
+
+.bloque-sector03{
+    background: linear-gradient(90deg, rgba(32, 30, 30, 0.76), rgba(0, 0, 0, 0.76)),  url('../imagenes/sectorhogar.jpg') center center;
+    background-size: cover;
+    min-height: 90vh;
+    transition: all 0.3s linear 0s;
+}
+
+
+.bloque-proveedores{
+    min-height: 105vh;
+}
+
+
+.growsector:hover {
+
+    transform: scale(1.03);
+    animation-delay: 0.9s;
+ 
+}
+
+.pulse {
+    margin: 50px;
+    width: 40px;
+    height: 40px;
+    animation: pulse 3s infinite;
+    animation-direction: alternate;
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+
+}
+
+@-webkit-keyframes pulse {
+    0% {
+      -webkit-transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(1.1);
+    }
+    100% {
+      -webkit-transform: scale(1);
+    }
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
