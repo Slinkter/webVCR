@@ -104,6 +104,15 @@ html {
 }
 
 
+.bloque-standar{
+
+
+    background: linear-gradient(90deg, rgba(32, 30, 30, 0.76), rgba(0, 0, 0, 0.76)), url('../imagenes/glass01.jpg') center center;
+    background-size: cover;
+    min-height: 90vh;
+    transition: all 0.3s linear 0s;
+}
+
 .bloque-sector01{
     background: linear-gradient(90deg, rgba(32, 30, 30, 0.76), rgba(0, 0, 0, 0.76)), url('../imagenes/glass01.jpg') center center;
     background-size: cover;
