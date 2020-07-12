@@ -23,11 +23,6 @@ h5 {
     line-height: 1.2;
 }
 
-.bg-while-line {
-    background: #ffffff;
-    border-top: 2px solid #c8ced4 !important;
-}
-
 .text-while {
     color: #c8ced4 !important;
 }
@@ -44,45 +39,49 @@ h5 {
 
 
 .banner_font {
+    margin: 0.3em 0 0.3em 0;
     font-family: 'Playfair Display', serif;
     font-size: 34px;
 }
 
-
 .bloque-standar {
-
-    background: linear-gradient(90deg, rgba(32, 30, 30, 0.76), rgba(0, 0, 0, 0.76)), url('../imagenes/glass01.jpg') center center;
+    background: linear-gradient(90deg, rgba(32, 30, 30, 0.86), rgba(0, 0, 0, 0.86)), url('../imagenes/glass01.jpg') center center;
     background-size: cover;
     min-height: 90vh;
     transition: all 0.3s linear 0s;
 }
 
 .bloque-sector01 {
-    background: linear-gradient(90deg, rgba(32, 30, 30, 0.76), rgba(0, 0, 0, 0.76)), url('../imagenes/glass01.jpg') center center;
+    background: linear-gradient(90deg, rgba(32, 30, 30, 0.86), rgba(0, 0, 0, 0.86)), url('../imagenes/glass01.jpg') center center;
     background-size: cover;
     min-height: 90vh;
     transition: all 0.3s linear 0s;
 }
 
 .bloque-sector02 {
-    background: linear-gradient(90deg, rgba(32, 30, 30, 0.76), rgba(0, 0, 0, 0.76)), url('../imagenes/sectoroffices.jpg') center center;
+    background: linear-gradient(90deg, rgba(32, 30, 30, 0.86), rgba(0, 0, 0, 0.86)), url('../imagenes/sectoroffices.jpg') center center;
     background-size: cover;
     min-height: 90vh;
     transition: all 0.3s linear 0s;
 }
 
 .bloque-sector03 {
-    background: linear-gradient(90deg, rgba(32, 30, 30, 0.76), rgba(0, 0, 0, 0.76)), url('../imagenes/sectorhogar.jpg') center center;
+    background: linear-gradient(90deg, rgba(32, 30, 30, 0.86), rgba(0, 0, 0, 0.86)), url('../imagenes/sectorhogar.jpg') center center;
     background-size: cover;
     min-height: 90vh;
     transition: all 0.3s linear 0s;
 }
 
-
 .bloque-proveedores {
-    min-height: 105vh;
+    padding: 5em;
 }
 
+.year-footer {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+    background-color: #fff;
+}
 
 .growsector:hover {
     transform: scale(1.03);
@@ -97,7 +96,6 @@ h5 {
     animation-direction: alternate;
     -webkit-animation-name: pulse;
     animation-name: pulse;
-
 }
 
 @keyframes pulse {
@@ -126,9 +124,6 @@ h5 {
     }
 }
 
-
-
-
 @media (min-width: 400px) {
     .h1-block-text {
         font-size: 2.9rem;
@@ -140,7 +135,6 @@ h5 {
         line-height: 1.2;
     }
 }
-
 
 @media (min-width: 768px) {
     .h1-block-text {
